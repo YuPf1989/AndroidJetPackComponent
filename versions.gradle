@@ -1,0 +1,56 @@
+ext.deps = [:]
+def versions = [:]
+versions.arch_core = "2.0.0"
+versions.room = "2.0.0"
+versions.lifecycle = "2.0.0"
+versions.support = "1.0.0"
+versions.work = "1.0.0-alpha10"
+versions.kotlin = "1.2.71"
+versions.atsl_runner = "1.1.0-alpha4"
+versions.atsl_rules = "1.1.0-alpha4"
+def deps = [:]
+
+def lifecycle = [:]
+lifecycle.runtime = "androidx.lifecycle:lifecycle-runtime:$versions.lifecycle"
+lifecycle.extensions = "androidx.lifecycle:lifecycle-extensions:$versions.lifecycle"
+lifecycle.java8 = "androidx.lifecycle:lifecycle-common-java8:$versions.lifecycle"
+lifecycle.compiler = "androidx.lifecycle:lifecycle-compiler:$versions.lifecycle"
+deps.lifecycle = lifecycle
+
+def work = [:]
+work.runtime = "android.arch.work:work-runtime:$versions.work"
+work.testing = "android.arch.work:work-testing:$versions.work"
+work.firebase = "android.arch.work:work-firebase:$versions.work"
+work.runtime_ktx = "android.arch.work:work-runtime-ktx:$versions.work"
+deps.work = work
+
+def room = [:]
+room.runtime = "androidx.room:room-runtime:$versions.room"
+room.compiler = "androidx.room:room-compiler:$versions.room"
+room.rxjava2 = "androidx.room:room-rxjava2:$versions.room"
+room.testing = "androidx.room:room-testing:$versions.room"
+deps.room = room
+
+def arch_core = [:]
+arch_core.testing = "androidx.arch.core:core-testing:$versions.arch_core"
+deps.arch_core = arch_core
+
+def kotlin = [:]
+kotlin.stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin"
+kotlin.test = "org.jetbrains.kotlin:kotlin-test-junit:$versions.kotlin"
+kotlin.plugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
+kotlin.allopen = "org.jetbrains.kotlin:kotlin-allopen:$versions.kotlin"
+deps.kotlin = kotlin
+
+def espresso = [:]
+espresso.core = "androidx.test.espresso:espresso-core:$versions.espresso"
+espresso.contrib = "androidx.test.espresso:espresso-contrib:$versions.espresso"
+espresso.intents = "androidx.test.espresso:espresso-intents:$versions.espresso"
+deps.espresso = espresso
+
+def atsl = [:]
+atsl.runner = "androidx.test:runner:$versions.atsl_runner"
+atsl.rules = "androidx.test:rules:$versions.atsl_runner"
+deps.atsl = atsl
+
+ext.deps = deps

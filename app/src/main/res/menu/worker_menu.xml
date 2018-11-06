@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_one_work"
+        android:title="do work one time"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_one_work_with_constrains"
+        android:title="do work with constrains"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_cancel_work"
+        android:title="cancel worker"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_periodic_work"
+        android:title="PeriodicWork"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_chain_work"
+        android:title="ChainWork"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_param_work"
+        android:title="ParamWork"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_cancel_allwork"
+        android:title="Cancel All Work"
+        app:showAsAction="never" />
+</menu>
