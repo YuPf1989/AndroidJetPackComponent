@@ -16,4 +16,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="创建MyObserver" />
+
+    <Button
+        android:id="@+id/btn_observe_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="感知自定义Activity的生命周期" />
 </LinearLayout>
