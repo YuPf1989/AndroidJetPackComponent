@@ -1,4 +1,6 @@
-package com.rain.androidjetpackcomponent.room;
+package com.rain.androidjetpackcomponent.room.dao;
+
+import com.rain.androidjetpackcomponent.room.entity.User;
 
 import java.util.List;
 

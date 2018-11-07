@@ -1,6 +1,10 @@
 package com.rain.androidjetpackcomponent.room;
 
 import com.rain.androidjetpackcomponent.MyApp;
+import com.rain.androidjetpackcomponent.room.dao.BookDao;
+import com.rain.androidjetpackcomponent.room.dao.UserDao;
+import com.rain.androidjetpackcomponent.room.entity.Book;
+import com.rain.androidjetpackcomponent.room.entity.User;
 
 import androidx.annotation.NonNull;
 import androidx.room.Database;
@@ -14,7 +18,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
  * Date:2018/11/6 16:22
  * Description:
  */
-@Database(entities = {User.class,Book.class}, version = 1,exportSchema = true)
+@Database(entities = {User.class,Book.class}, version = 1,exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {
     private static class InstanceHolder{
         private static AppDatabase instance = Room.databaseBuilder(MyApp.getInstance(), AppDatabase.class, "user.db")
@@ -26,7 +30,6 @@ public abstract class AppDatabase extends RoomDatabase {
                 })
                 .allowMainThreadQueries()// 允许在主线程工作
                 .build();
-
     }
 
     public static AppDatabase instance() {

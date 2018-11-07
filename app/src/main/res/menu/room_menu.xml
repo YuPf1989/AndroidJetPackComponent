@@ -22,4 +22,9 @@
         app:showAsAction="never"
         android:title="查" />
 
+    <item
+        android:id="@+id/action_query2"
+        app:showAsAction="never"
+        android:title="连表查询" />
+
 </menu>

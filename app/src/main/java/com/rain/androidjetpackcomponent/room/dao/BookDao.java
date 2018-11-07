@@ -1,4 +1,7 @@
-package com.rain.androidjetpackcomponent.room;
+package com.rain.androidjetpackcomponent.room.dao;
+
+import com.rain.androidjetpackcomponent.room.entity.Book;
+import com.rain.androidjetpackcomponent.room.entity.InnerJoinResult;
 
 import java.util.List;
 
@@ -22,4 +25,7 @@ public interface BookDao {
 
     @Query("SELECT * FROM book ")
     List<Book> getAll();
+
+    @Query("SELECT user_id,first_name,last_name,title FROM user INNER JOIN book ON user.id=book.user_id  ")
+    List<InnerJoinResult> getBookFromUser();
 }

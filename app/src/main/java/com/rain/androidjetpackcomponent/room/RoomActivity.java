@@ -6,6 +6,10 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.rain.androidjetpackcomponent.R;
+import com.rain.androidjetpackcomponent.room.dao.BookDao;
+import com.rain.androidjetpackcomponent.room.dao.UserDao;
+import com.rain.androidjetpackcomponent.room.entity.Book;
+import com.rain.androidjetpackcomponent.room.entity.User;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -74,6 +78,11 @@ public class RoomActivity extends AppCompatActivity {
 
             case R.id.action_query:
                 queryAndShow();
+                break;
+
+            case R.id.action_query2:
+                String s = bookDao.getBookFromUser().toString();
+                setTextResult(s);
                 break;
             default:
         }

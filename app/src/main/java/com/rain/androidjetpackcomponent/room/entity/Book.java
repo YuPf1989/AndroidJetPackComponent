@@ -1,4 +1,4 @@
-package com.rain.androidjetpackcomponent.room;
+package com.rain.androidjetpackcomponent.room.entity;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
