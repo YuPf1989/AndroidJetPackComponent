@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_insert"
+        app:showAsAction="never"
+        android:title="增" />
+
+    <item
+        android:id="@+id/action_delete"
+        app:showAsAction="never"
+        android:title="删除所有用户" />
+
+    <item
+        android:id="@+id/action_update"
+        app:showAsAction="never"
+        android:title="改" />
+
+    <item
+        android:id="@+id/action_query"
+        app:showAsAction="never"
+        android:title="查" />
+
+</menu>

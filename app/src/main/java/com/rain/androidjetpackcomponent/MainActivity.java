@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.rain.androidjetpackcomponent.lifecycle.LifecycleActivity;
+import com.rain.androidjetpackcomponent.room.RoomActivity;
 import com.rain.androidjetpackcomponent.workmanager.WorkmanagerActivity;
 
 /**
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.btn_workmanager).setOnClickListener(this);
         findViewById(R.id.btn_lifecycle).setOnClickListener(this);
+        findViewById(R.id.btn_room).setOnClickListener(this);
     }
 
 
@@ -36,7 +38,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(this,LifecycleActivity.class));
                 break;
 
-                default:
+            case R.id.btn_room:
+                startActivity(new Intent(this,RoomActivity.class));
+                break;
+
+
+            default:
         }
     }
 }

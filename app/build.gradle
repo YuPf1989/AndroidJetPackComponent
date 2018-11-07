@@ -30,6 +30,8 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
 
+    implementation deps.support.design
+
     implementation "android.arch.work:work-runtime:$work_version"
     // optional - Firebase JobDispatcher support
     implementation "android.arch.work:work-firebase:$work_version"
@@ -42,8 +44,8 @@ dependencies {
     // For Room
     implementation deps.room.runtime
     annotationProcessor deps.room.compiler
+    
     androidTestImplementation deps.room.testing
-
     androidTestImplementation deps.work.testing
     androidTestImplementation deps.arch_core.testing
     androidTestImplementation deps.atsl.runner
